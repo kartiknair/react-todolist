@@ -1,0 +1,227 @@
+.meditation-girl {
+  margin-top: 20px;
+  width: 300px;
+}
+
+.chill-text {
+  opacity: 0.3;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  color: #fff;
+}
+
+.main-header {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.date {
+  color: #fff;
+  margin-left: auto;
+  display: grid;
+  justify-items: center;
+}
+
+.date-month-year {
+  display: flex;
+  align-items: center;
+}
+
+.month-year {
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+
+.date-day {
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.3em;
+  margin-top: 5px;
+}
+
+.date-number {
+  font-size: 3.5em;
+}
+
+.date-month {
+  font-weight: 500;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.header {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.plus-btn {
+  margin-bottom: 4px;
+}
+
+.todoListMain .header form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.todoListMain .header input {
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+  outline: none;
+}
+
+.todoListMain .header input:focus::-webkit-input-placeholder {
+  transition: all ease 200ms;
+  color: transparent;
+}
+
+.todoListMain .header button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #707070;
+  background: transparent;
+  font-size: 1.5rem;
+}
+
+.todoListMain .list {
+  width: 300px;
+  background-color: white;
+  color: #707070;
+  margin-top: 2rem;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  transition: all ease 400ms;
+}
+
+.todoListMain .list li {
+  width: 100%;
+  list-style: none;
+  padding: 14px 0 14px 14px;
+  display: flex;
+}
+
+.todoListMain .list li p {
+  transition: all ease 400ms;
+}
+
+.todoListMain .list li .deleteBtn {
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: #707070;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+}
+
+.todoListMain button:hover {
+  transform: scale(1.2);
+}
+
+.checkbox {
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+/* Checkmark style starts */
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 8px;
+  }
+}
+
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 14px;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.check-box {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 1.6px solid #707070;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+
+.check-box::before,
+.check-box::after {
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 3.2px;
+  background-color: #34b93d;
+  display: inline-block;
+  transform-origin: left top;
+  border-radius: 5px;
+  content: " ";
+  transition: opacity ease 0.5;
+}
+
+.check-box::before {
+  top: 11.52px;
+  left: 6.56px;
+  box-shadow: 0 0 0 0.8px #fff;
+  transform: rotate(-135deg);
+}
+
+.check-box::after {
+  top: 5.92px;
+  left: 0.8px;
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked + .check-box,
+.check-box.checked {
+  border-color: #34b93d;
+}
+
+input[type="checkbox"]:checked + .check-box::after,
+.check-box.checked::after {
+  height: 8px;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+
+input[type="checkbox"]:checked + .check-box::before,
+.check-box.checked::before {
+  height: 19.2px;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}

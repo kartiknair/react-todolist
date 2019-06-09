@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.05e0d7be.chunk.css",
+    "main.js": "/static/js/main.a50aad53.chunk.js",
+    "main.js.map": "/static/js/main.a50aad53.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.d28378fd.chunk.js": "/static/js/2.d28378fd.chunk.js",
+    "static/js/2.d28378fd.chunk.js.map": "/static/js/2.d28378fd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3cb7a86d57714be9affc37daf50b3468.js": "/precache-manifest.3cb7a86d57714be9affc37daf50b3468.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.05e0d7be.chunk.css.map": "/static/css/main.05e0d7be.chunk.css.map",
+    "static/media/meditationGirl.svg": "/static/media/meditationGirl.3096d611.svg",
+    "static/media/today-logo.svg": "/static/media/today-logo.20bb099b.svg"
+  }
+}
